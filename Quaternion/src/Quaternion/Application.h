@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Window.h"
+#include "Input.h"
 
 namespace QUA {
 
@@ -15,6 +16,7 @@ namespace QUA {
 
 	private:
 		std::unique_ptr<Window> m_Window;
+		std::unique_ptr<Input> m_Input;
 	};
 
 	//To be defined by CLIENT

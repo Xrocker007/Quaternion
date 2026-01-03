@@ -390,6 +390,8 @@
     <ClInclude Include="src\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Raylib\RaylibInput.h" />
+    <ClInclude Include="src\Quaternion\Input.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Raylib\RaylibWindow.cpp">
@@ -404,5 +406,6 @@
     <ClCompile Include="src\pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Raylib\RaylibInput.cpp" />
   </ItemGroup>
 </Project>

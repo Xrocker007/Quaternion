@@ -12,6 +12,7 @@ public:
 	{
 
 	}
+
 };
 
 QUA::Application* QUA::CreateApplication()
