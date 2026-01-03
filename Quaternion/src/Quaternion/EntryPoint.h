@@ -6,6 +6,9 @@ extern QUA::Application* QUA::CreateApplication();
 
 	int main(int argc, char** argv)
 	{
+		QUA::Log::Init();
+		QUA_CORE_WARN("inisaized");
+
 		auto app = QUA::CreateApplication();
 		app->Run();
 		delete app;

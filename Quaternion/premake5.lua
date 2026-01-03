@@ -49,7 +49,11 @@ project "Quaternion"
     }
     files {"**.c", "**.cpp", "**.h"}
 
-    includedirs { "./", "src"}
+    includedirs 
+	{ 
+		"./", "src",
+		"../Quaternion/external/spdlog/include",
+	}
 	link_raylib();
 	
 	-- To link to a lib use link_to("LIB_FOLDER_NAME")
@@ -70,6 +74,8 @@ project "Quaternion"
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Game")
 		}
 
+	buildoptions { "/utf-8" }
+
 project "Game"
 	location "../Game"
 	kind "ConsoleApp"
@@ -86,7 +92,7 @@ project "Game"
 
 	includedirs
 	{
-		--"Quaternion/external/spdlog/include",
+		"../Quaternion/external/spdlog/include",
 		"../Quaternion/src"
 		
 	}
@@ -95,6 +101,8 @@ project "Game"
 	{
 		"Quaternion"
 	}
+
+	buildoptions { "/utf-8" }
 
 	filter "system:windows"
 		cppdialect "C++17"
@@ -121,3 +129,5 @@ project "Game"
 		buildoptions "/MD"
 		optimize "On"
 
+
+	

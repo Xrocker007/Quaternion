@@ -37,6 +37,7 @@ namespace QUA {
 		}
 
 		CloseWindow();
+
 	}
 
 }
