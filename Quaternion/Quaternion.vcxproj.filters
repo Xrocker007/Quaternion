@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{21EB8090-0D4E-1035-B6D3-48EBA215DCB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Quaternion">
+      <UniqueIdentifier>{162D0F51-8264-57E8-8B6E-BB0BF7247EE1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E9C7FDCE-D52A-8D73-7EB0-C5296AF258F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quaternion">
+      <UniqueIdentifier>{DE7C6B6C-4AB4-B303-53BE-1727BF74DAFC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\Application.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\Core.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\EntryPoint.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Quaternion\Application.cpp">
+      <Filter>Source Files\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
