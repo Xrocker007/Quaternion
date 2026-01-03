@@ -7,7 +7,7 @@ extern QUA::Application* QUA::CreateApplication();
 	int main(int argc, char** argv)
 	{
 		QUA::Log::Init();
-		QUA_CORE_WARN("inisaized");
+		QUA_CORE_WARN("Initialized");
 
 		auto app = QUA::CreateApplication();
 		app->Run();

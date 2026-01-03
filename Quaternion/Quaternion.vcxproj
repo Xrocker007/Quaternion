@@ -303,14 +303,17 @@
     <ClInclude Include="external\spdlog\include\spdlog\stopwatch.h" />
     <ClInclude Include="external\spdlog\include\spdlog\tweakme.h" />
     <ClInclude Include="external\spdlog\include\spdlog\version.h" />
+    <ClInclude Include="src\Platform\Raylib\RaylibWindow.h" />
     <ClInclude Include="src\Quaternion.h" />
     <ClInclude Include="src\Quaternion\Application.h" />
     <ClInclude Include="src\Quaternion\Core.h" />
     <ClInclude Include="src\Quaternion\EntryPoint.h" />
     <ClInclude Include="src\Quaternion\Log.h" />
+    <ClInclude Include="src\Quaternion\Window.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Raylib\RaylibWindow.cpp" />
     <ClCompile Include="src\Quaternion\Application.cpp" />
     <ClCompile Include="src\Quaternion\Log.cpp" />
     <ClCompile Include="src\pch.cpp">

@@ -4,6 +4,12 @@
     <Filter Include="Header Files">
       <UniqueIdentifier>{21EB8090-0D4E-1035-B6D3-48EBA215DCB7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Platform">
+      <UniqueIdentifier>{953CC4F4-01A9-7FEF-CA9C-174D36C8A157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Platform\Raylib">
+      <UniqueIdentifier>{074AD148-F304-C1F4-9CBC-393F88560B85}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Header Files\Quaternion">
       <UniqueIdentifier>{162D0F51-8264-57E8-8B6E-BB0BF7247EE1}</UniqueIdentifier>
     </Filter>
@@ -36,6 +42,12 @@
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{E9C7FDCE-D52A-8D73-7EB0-C5296AF258F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{5DFAB97B-C966-7576-925A-0DD4FE8597DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\Raylib">
+      <UniqueIdentifier>{CFB6BEF7-BB71-AEA3-6429-27EE50C3F833}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Quaternion">
       <UniqueIdentifier>{DE7C6B6C-4AB4-B303-53BE-1727BF74DAFC}</UniqueIdentifier>
@@ -354,6 +366,9 @@
     <ClInclude Include="external\spdlog\include\spdlog\version.h">
       <Filter>Header Files\external\spdlog\include\spdlog</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Raylib\RaylibWindow.h">
+      <Filter>Header Files\Platform\Raylib</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -369,11 +384,17 @@
     <ClInclude Include="src\Quaternion\Log.h">
       <Filter>Header Files\Quaternion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Quaternion\Window.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
     <ClInclude Include="src\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Raylib\RaylibWindow.cpp">
+      <Filter>Source Files\Platform\Raylib</Filter>
+    </ClCompile>
     <ClCompile Include="src\Quaternion\Application.cpp">
       <Filter>Source Files\Quaternion</Filter>
     </ClCompile>

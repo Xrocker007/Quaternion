@@ -5,7 +5,7 @@ class Game : public QUA::Application
 public:
 	Game()
 	{
-
+		
 	}
 
 	~Game()
