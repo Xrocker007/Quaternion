@@ -11,12 +11,14 @@ namespace QUA {
 		RaylibDraw();
 		~RaylibDraw();
 
-		void drawText(std::string_view text, int x, int y, int fontSize, Colour colour) const override;
-		void drawLine(float x1, float y1, float x2, float y2, float thickness, Colour colour) const override;
-		void drawRect(float x, float y, float width, float height, Colour colour) const override;
-		void drawCircle(float x, float y, float radius, Colour colour) const override;
+		void drawText(std::string_view text, Vec2 pos, int fontSize, Colour colour) override;
+		void drawLine(Vec2 startPos, Vec2 endPos, float thickness, Colour colour) override;
+		void drawRect(Vec2 pos, Vec2 size, Colour colour) override;
+		void drawRect(Vec2 pos, Vec2 size, Vec2 pivotPoint, float rotation, Colour colour) override;
+		void drawCircle(Vec2 pos, float radius, Colour colour) override;
 		
-		//void drawTexture(TextureHandle tex, int x, int y, unsigned int hexColour)
+		//void drawTexture(Texture2D tex, Vec2 pos, Colour colour) const override;
+		//void drawTexture(Texture2D tex, Vec2 pos, Vec2 size, Vec2 UV1, Vec2 UV2, Vec2 pivotPoint, float rotation, Colour colour) const override;
 	};
 
 }

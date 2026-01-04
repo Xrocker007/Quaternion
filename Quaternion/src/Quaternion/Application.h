@@ -4,6 +4,7 @@
 #include "Window.h"
 #include "Input.h"
 #include "Draw.h"
+#include "Physics.h"
 
 namespace QUA {
 
@@ -20,6 +21,7 @@ namespace QUA {
 		std::unique_ptr<Window> m_Window;
 		std::unique_ptr<Input> m_Input;
 		std::unique_ptr<Draw> m_Renderer;
+		std::unique_ptr<Physics> m_Physics;
 
 	};
 

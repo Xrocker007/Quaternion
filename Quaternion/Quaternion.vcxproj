@@ -199,6 +199,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Box2D\Box2DPhysics.h" />
     <ClInclude Include="src\Platform\Raylib\RaylibDraw.h" />
     <ClInclude Include="src\Platform\Raylib\RaylibInput.h" />
     <ClInclude Include="src\Platform\Raylib\RaylibWindow.h" />
@@ -209,10 +210,13 @@
     <ClInclude Include="src\Quaternion\EntryPoint.h" />
     <ClInclude Include="src\Quaternion\Input.h" />
     <ClInclude Include="src\Quaternion\Log.h" />
+    <ClInclude Include="src\Quaternion\Physics.h" />
+    <ClInclude Include="src\Quaternion\PhysicsTypes.h" />
     <ClInclude Include="src\Quaternion\Window.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Box2D\Box2DPhysics.cpp" />
     <ClCompile Include="src\Platform\Raylib\RaylibDraw.cpp" />
     <ClCompile Include="src\Platform\Raylib\RaylibInput.cpp" />
     <ClCompile Include="src\Platform\Raylib\RaylibWindow.cpp" />

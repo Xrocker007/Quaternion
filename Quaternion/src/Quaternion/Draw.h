@@ -1,6 +1,5 @@
 #pragma once
 
-#include "pch.h"
 #include "Core.h"
 
 namespace QUA {
@@ -8,12 +7,15 @@ namespace QUA {
     class QUA_API Draw
     {
     public:
-        virtual void drawText(std::string_view text, int x, int y, int fontSize, Colour colour) const = 0;
-        virtual void drawLine(float x1, float y1, float x2, float y2, float thickness, Colour colour) const = 0;
-        virtual void drawRect(float x, float y, float width, float height, Colour colour) const = 0;
-        virtual void drawCircle(float x, float y, float radius, Colour colour) const = 0;
 
-        //virtual void drawTexture(TextureHandle tex, int x, int y, Colour colour) const = 0;
+        virtual void drawText(std::string_view text, Vec2 pos, int fontSize, Colour colour) = 0;
+        virtual void drawLine(Vec2 startPos, Vec2 endPos, float thickness, Colour colour) = 0;
+        virtual void drawRect(Vec2 pos, Vec2 size, Colour colour) = 0;
+        virtual void drawRect(Vec2 pos, Vec2 size, Vec2 pivotPoint, float rotation, Colour colour) = 0;
+        virtual void drawCircle(Vec2 pos, float radius, Colour colour) = 0;
+
+        //virtual void drawTexture(Texture2D tex, Vec2 pos, Colour colour) = 0;
+        //virtual void drawTexture(Texture2D tex, Vec2 pos, Vec2 size, Vec2 UV1, Vec2 UV2, Vec2 pivotPoint, float rotation, Colour colour) = 0;
 
         static Draw* Create();
     };

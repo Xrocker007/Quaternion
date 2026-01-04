@@ -4,6 +4,9 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\Box2D">
+      <UniqueIdentifier>{B8A85B93-A476-4F99-8D0A-C0BF79772BFE}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform\Raylib">
       <UniqueIdentifier>{FC7A2723-6806-95E7-7117-18DCDD21F1E7}</UniqueIdentifier>
     </Filter>
@@ -12,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Box2D\Box2DPhysics.h">
+      <Filter>Platform\Box2D</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Raylib\RaylibDraw.h">
       <Filter>Platform\Raylib</Filter>
     </ClInclude>
@@ -40,12 +46,21 @@
     <ClInclude Include="src\Quaternion\Log.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Quaternion\Physics.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\PhysicsTypes.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion\Window.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Box2D\Box2DPhysics.cpp">
+      <Filter>Platform\Box2D</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Raylib\RaylibDraw.cpp">
       <Filter>Platform\Raylib</Filter>
     </ClCompile>
