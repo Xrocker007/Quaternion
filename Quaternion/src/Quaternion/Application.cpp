@@ -24,7 +24,7 @@ namespace QUA {
 		{
 			m_Window->BeginFrame();
 
-			//m_Renderer->drawText("colour:" , 190, 200, 20, {1, 0, 0, 1});
+			//m_Renderer->drawText("text" , 190, 200, 20, {1, 0, 0, 1});
 
 			m_Renderer->drawCircle(200, 200, 50, { 0, 0, 1, 1 });
 			m_Renderer->drawRect(200, 225, 50, 50, { 1, 0, 0, 0.5 });

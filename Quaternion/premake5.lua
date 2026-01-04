@@ -3,6 +3,10 @@ baseName = path.getbasename(os.getcwd());
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["box2d"] = "../Quaternion/external/box2d/include"
+include "../Quaternion/external/box2d"
+
 project "Quaternion"
   	kind "SharedLib"
     location "../Quaternion"
@@ -42,17 +46,21 @@ project "Quaternion"
 	filter {}
 
 
-    vpaths 
-    {
-        ["Header Files/*"] = { "src/**.h", "**.h"},
-        ["Source Files/*"] = {"src/**.c", "src/**.cpp","**.c", "**.cpp"},
-    }
-    files {"**.c", "**.cpp", "**.h"}
+    files
+	{
+		"../%{prj.name}/src/**.h",
+		"../%{prj.name}/src/**.cpp"
+	}
 
     includedirs 
 	{ 
 		"./", "src",
 		"../Quaternion/external/spdlog/include",
+		"%{IncludeDir.box2d}"
+	}
+	links
+	{
+		"box2d"
 	}
 	link_raylib();
 	
