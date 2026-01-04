@@ -44,7 +44,7 @@ namespace QUA {
 		virtual void SetVSync(bool enabled) = 0;
 		virtual bool GetVSync() const = 0;
 
-		virtual void SetBackgroundColour(unsigned int hexValue) = 0;
+		virtual void SetBackgroundColour(Colour colour) = 0;
 
 		virtual bool IsWindowRunning() = 0;
 

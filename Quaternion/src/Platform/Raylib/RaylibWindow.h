@@ -29,7 +29,7 @@ namespace QUA {
 		void SetVSync(bool enabled) override;
 		bool GetVSync() const override;
 
-		void SetBackgroundColour(unsigned int hexValue) override;
+		void SetBackgroundColour(Colour colour) override;
 
 		bool IsWindowRunning() override;
 
@@ -45,7 +45,7 @@ namespace QUA {
 			bool Resizable;
 			bool Borderless;
 			bool VSync;
-			unsigned int BackgroundColour;
+			Colour BackgroundColour;
 			bool windowRunning;
 		};
 

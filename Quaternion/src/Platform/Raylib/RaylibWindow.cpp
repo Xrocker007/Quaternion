@@ -8,6 +8,11 @@ namespace QUA {
 		return new RaylibWindow(props);
 	}
 
+	Color RaylibBackgroundColor(Colour colour)
+	{
+		return ColorFromNormalized(Vector4{ colour.r, colour.g, colour.b, colour.a });
+	}
+
 	RaylibWindow::RaylibWindow(const WindowProps& props)
 	{
 		Init(props);
@@ -23,7 +28,7 @@ namespace QUA {
 		m_Data.Title = props.Title;
 		m_Data.Width = props.Width;
 		m_Data.Height = props.Height;
-		m_Data.BackgroundColour = 0xF5F5F5F5;
+		m_Data.BackgroundColour = {0.9, 0.9, 0.9, 1};
 
 		InitWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str());
 
@@ -40,7 +45,7 @@ namespace QUA {
 	{
 		BeginDrawing();
 
-		ClearBackground(GetColor(m_Data.BackgroundColour));
+		ClearBackground(RaylibBackgroundColor(m_Data.BackgroundColour));
 	}
 
 	void RaylibWindow::EndFrame()
@@ -124,9 +129,9 @@ namespace QUA {
 		return m_Data.VSync;
 	}
 
-	void RaylibWindow::SetBackgroundColour(unsigned int hexValue)
+	void RaylibWindow::SetBackgroundColour(Colour colour)
 	{
-		m_Data.BackgroundColour = hexValue;
+		m_Data.BackgroundColour = colour;
 	}
 
 	bool RaylibWindow::IsWindowRunning()

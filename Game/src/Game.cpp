@@ -1,4 +1,5 @@
 #include "Quaternion.h"
+#include "Quaternion/Input.h"
 
 class Game : public QUA::Application
 {
@@ -12,6 +13,11 @@ public:
 	{
 
 	}
+
+	/*void Game::Run()
+	{
+		
+	}*/
 
 };
 

@@ -10,7 +10,6 @@ namespace QUA {
     }
 
     int RaylibKey(Key k) {
-
         switch (k)
         {
         case Key::A: return KEY_A; case Key::B: return KEY_B; case Key::C: return KEY_C;

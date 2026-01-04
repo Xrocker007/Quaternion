@@ -11,3 +11,10 @@
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+
+typedef struct Colour {
+     float r;        // Color red value
+     float g;        // Color green value
+     float b;        // Color blue value
+     float a;        // Color alpha value
+} Colour;

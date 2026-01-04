@@ -366,6 +366,9 @@
     <ClInclude Include="external\spdlog\include\spdlog\version.h">
       <Filter>Header Files\external\spdlog\include\spdlog</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Raylib\RaylibInput.h">
+      <Filter>Header Files\Platform\Raylib</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Raylib\RaylibWindow.h">
       <Filter>Header Files\Platform\Raylib</Filter>
     </ClInclude>
@@ -381,6 +384,9 @@
     <ClInclude Include="src\Quaternion\EntryPoint.h">
       <Filter>Header Files\Quaternion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Quaternion\Input.h">
+      <Filter>Header Files\Quaternion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion\Log.h">
       <Filter>Header Files\Quaternion</Filter>
     </ClInclude>
@@ -390,10 +396,13 @@
     <ClInclude Include="src\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\Raylib\RaylibInput.h" />
-    <ClInclude Include="src\Quaternion\Input.h" />
+    <ClInclude Include="src\Platform\Raylib\RaylibDraw.h" />
+    <ClInclude Include="src\Quaternion\Draw.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Raylib\RaylibInput.cpp">
+      <Filter>Source Files\Platform\Raylib</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Raylib\RaylibWindow.cpp">
       <Filter>Source Files\Platform\Raylib</Filter>
     </ClCompile>
@@ -406,6 +415,6 @@
     <ClCompile Include="src\pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Raylib\RaylibInput.cpp" />
+    <ClCompile Include="src\Platform\Raylib\RaylibDraw.cpp" />
   </ItemGroup>
 </Project>
