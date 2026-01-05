@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "TextureTypes.h"
 
 namespace QUA {
 
@@ -13,9 +14,6 @@ namespace QUA {
         virtual void drawRect(Vec2 pos, Vec2 size, Colour colour) = 0;
         virtual void drawRect(Vec2 pos, Vec2 size, Vec2 pivotPoint, float rotation, Colour colour) = 0;
         virtual void drawCircle(Vec2 pos, float radius, Colour colour) = 0;
-
-        //virtual void drawTexture(Texture2D tex, Vec2 pos, Colour colour) = 0;
-        //virtual void drawTexture(Texture2D tex, Vec2 pos, Vec2 size, Vec2 UV1, Vec2 UV2, Vec2 pivotPoint, float rotation, Colour colour) = 0;
 
         static Draw* Create();
     };

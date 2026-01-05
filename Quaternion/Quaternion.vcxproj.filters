@@ -18,10 +18,16 @@
     <ClInclude Include="src\Platform\Box2D\Box2DPhysics.h">
       <Filter>Platform\Box2D</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Raylib\RaylibCamera2D.h">
+      <Filter>Platform\Raylib</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Raylib\RaylibDraw.h">
       <Filter>Platform\Raylib</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Raylib\RaylibInput.h">
+      <Filter>Platform\Raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Raylib\RaylibTexture.h">
       <Filter>Platform\Raylib</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Raylib\RaylibWindow.h">
@@ -29,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="src\Quaternion.h" />
     <ClInclude Include="src\Quaternion\Application.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\Camera2D.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
     <ClInclude Include="src\Quaternion\Core.h">
@@ -52,19 +61,33 @@
     <ClInclude Include="src\Quaternion\PhysicsTypes.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Quaternion\TextureManager.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\TextureTypes.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion\Window.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Quaternion\CameraManager.h" />
+    <ClInclude Include="src\Quaternion\Scene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Box2D\Box2DPhysics.cpp">
       <Filter>Platform\Box2D</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Raylib\RaylibCamera2D.cpp">
+      <Filter>Platform\Raylib</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Raylib\RaylibDraw.cpp">
       <Filter>Platform\Raylib</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Raylib\RaylibInput.cpp">
+      <Filter>Platform\Raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Raylib\RaylibTexture.cpp">
       <Filter>Platform\Raylib</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Raylib\RaylibWindow.cpp">

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "raylib.h"
 #include "Quaternion/Draw.h"
 
 namespace QUA {
@@ -16,9 +15,7 @@ namespace QUA {
 		void drawRect(Vec2 pos, Vec2 size, Colour colour) override;
 		void drawRect(Vec2 pos, Vec2 size, Vec2 pivotPoint, float rotation, Colour colour) override;
 		void drawCircle(Vec2 pos, float radius, Colour colour) override;
-		
-		//void drawTexture(Texture2D tex, Vec2 pos, Colour colour) const override;
-		//void drawTexture(Texture2D tex, Vec2 pos, Vec2 size, Vec2 UV1, Vec2 UV2, Vec2 pivotPoint, float rotation, Colour colour) const override;
+	
 	};
 
 }
