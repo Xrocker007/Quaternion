@@ -40,10 +40,16 @@
     <ClInclude Include="src\Quaternion\Camera2D.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Quaternion\CameraManager.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion\Core.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
     <ClInclude Include="src\Quaternion\Draw.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion\EntityComponentSystem.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
     <ClInclude Include="src\Quaternion\EntryPoint.h">
@@ -61,6 +67,9 @@
     <ClInclude Include="src\Quaternion\PhysicsTypes.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Quaternion\Scene.h">
+      <Filter>Quaternion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion\TextureManager.h">
       <Filter>Quaternion</Filter>
     </ClInclude>
@@ -71,8 +80,6 @@
       <Filter>Quaternion</Filter>
     </ClInclude>
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\Quaternion\CameraManager.h" />
-    <ClInclude Include="src\Quaternion\Scene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Box2D\Box2DPhysics.cpp">

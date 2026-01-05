@@ -10,6 +10,8 @@
 #include "Quaternion/Physics.h"
 #include "Quaternion/TextureManager.h"
 #include "Quaternion/CameraManager.h"
+#include "Quaternion/Scene.h"
+#include "Quaternion/EntityComponentSystem.h"
 
 //-----Entry Point-----------------
 #include "Quaternion/EntryPoint.h"

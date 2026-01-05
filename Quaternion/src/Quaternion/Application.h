@@ -8,6 +8,7 @@
 #include "TextureManager.h"
 #include "CameraManager.h"
 #include "Scene.h"
+#include "EntityComponentSystem.h"
 
 namespace QUA {
 
@@ -24,7 +25,12 @@ namespace QUA {
 			Scenes.push_back(scene);
 		}
 
-	private:
+		void setCurrentScene(int sceneIndex)
+		{
+			currentScene = sceneIndex;
+		}
+
+	protected:
 		std::unique_ptr<Window> m_Window;
 		std::unique_ptr<Input> m_Input;
 		std::unique_ptr<Draw> m_Renderer;
@@ -32,7 +38,7 @@ namespace QUA {
 		std::unique_ptr<TextureManager> m_TextureManager;
 		std::unique_ptr<CameraManager> m_CameraManager;
 
-		int currentScene;
+		int currentScene = 0;
 		std::vector<Scene*> Scenes;
 
 		bool m_Running = true;

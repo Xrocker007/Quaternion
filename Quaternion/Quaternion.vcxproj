@@ -211,6 +211,7 @@
     <ClInclude Include="src\Quaternion\CameraManager.h" />
     <ClInclude Include="src\Quaternion\Core.h" />
     <ClInclude Include="src\Quaternion\Draw.h" />
+    <ClInclude Include="src\Quaternion\EntityComponentSystem.h" />
     <ClInclude Include="src\Quaternion\EntryPoint.h" />
     <ClInclude Include="src\Quaternion\Input.h" />
     <ClInclude Include="src\Quaternion\Log.h" />

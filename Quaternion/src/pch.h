@@ -12,6 +12,7 @@
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+#include <typeindex>
 
 typedef struct Colour {
      float r;        // Color red value

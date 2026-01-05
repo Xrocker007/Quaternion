@@ -1,6 +1,7 @@
 #pragma once
 #include "pch.h"
 #include "Core.h"
+#include "EntityComponentSystem.h"
 
 namespace QUA {
 
@@ -15,6 +16,7 @@ namespace QUA {
 		inline const std::string& GetName() const { return name; }
 	protected:
 		std::string name;
+		//Registry reg;
 	};
 
 }
